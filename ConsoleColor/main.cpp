@@ -40,7 +40,7 @@ int main() {
     std::cout << std::endl;
 
     int** numArray = new int* [height];
-    std::srand(std::time(0));
+    std::srand(static_cast<unsigned int>(std::time(0)));
     for (int i = 0; i < height; ++i) {
         numArray[i] = new int[width];
         for (int j = 0; j < width; ++j) {
